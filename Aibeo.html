@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dũng</title>
+</head>
+<style>
+    #yes {
+        position: absolute;
+        left: 0px;
+        width: 80px;
+    }
+    #no {
+        position: absolute;
+        left: 80px;
+        width: 80px;
+    }
+    #no1 {
+        position: absolute;
+        left: 160px;
+        width: 100px;
+    }
+    #no2 {
+        position: absolute;
+        left: 260px;
+        width: 120px;
+    }
+</style>
+<body>
+    <script>
+        var nope = function() {
+            var btn = document.getElementById("no");
+            var top = Math.floor(Math.random()*400);
+            var left = Math.floor(Math.random()*800);
+            btn.style.top = top;
+            btn.style.left = left;
+        }
+        var nope1 = function() {
+            var btn = document.getElementById("no1");
+            var top = Math.floor(Math.random()*400);
+            var left = Math.floor(Math.random()*800);
+            btn.style.top = top;
+            btn.style.left = left;
+        }
+        var nope2 = function() {
+            var btn = document.getElementById("no2");
+            var top = Math.floor(Math.random()*400);
+            var left = Math.floor(Math.random()*800);
+            btn.style.top = top;
+            btn.style.left = left;
+        }
+        var yep = function() {
+            alert("lêu lêu khánh béo :))))");
+        }
+    </script>
+    <h1>Ai béo nhất :)</h1>
+    <button id="yes" onclick="yep()">Khánh Béo nhất</button>
+    <button id="no" onclick="nope()">Bo  Béo nhất </button>
+    <button id="no1" onclick="nope1()">Bin  Béo nhất </button>
+    <button id="no2" onclick="nope2()">Nam  Béo nhất </button>
+</body>
+</html>
